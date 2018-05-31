@@ -1,0 +1,34 @@
+package web.test;
+
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class payAutomationOnAlipay {
+	WebDriver driver;
+ @Before
+ public void  setup()
+ {
+	 System.setProperty("webdriver.firefox.marionette", "C:/geckodriver.exe");
+		driver = new FirefoxDriver();
+		driver.navigate().to("https://cart.taobao.com/cart.htm?t=1525333240711");
+ }
+ 
+ 
+ @After
+ public void cleanup()
+ {
+	 driver.close();
+ }
+ 
+ /**
+  * 
+  */
+
+ @Test
+ public void payOnline() {
+	 
+ }
+}
